@@ -1,0 +1,19 @@
+get:
+  produces:
+    - application/json
+  parameters:
+    - name: name
+      in: query
+      description: 名前
+      required: true
+      type: string
+  operationId: getGreeting
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: '../response/hello-response.yaml#/HelloResponse'
+    500:
+      description: Internal Server Error
+      schema:
+        $ref: '../response/error-response.yaml#/DefaultErrorResponse'

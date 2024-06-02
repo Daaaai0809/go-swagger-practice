@@ -1,0 +1,11 @@
+swagger: '2.0'
+info: 
+  version: 1.0.0
+  title: go-swgger-practice
+  description: go-swaggerで生成したAPIのサンプル
+basePath: /api
+schemes:
+  - http
+paths:
+  /hello:
+    $ref: "./paths/hello.yaml"

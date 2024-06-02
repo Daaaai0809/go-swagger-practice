@@ -1,0 +1,6 @@
+"HelloResponse":
+  type: object
+  properties:
+    message:
+      type: string
+      example: "Hello, World!"
